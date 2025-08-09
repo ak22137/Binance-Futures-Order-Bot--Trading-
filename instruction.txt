@@ -1,0 +1,94 @@
+Assignment: Binance Futures Order Bot
+ Objective
+ Develop a CLI-based trading bot for Binance USDT-M Futures that supports multiple order types
+ with robust logging, validation, and documentation.
+ Key Responsibilities
+ 1. Core Orders (Mandatory)
+  MarketOrders
+  LimitOrders
+ 2. Advanced Orders (Bonus– Higher Priority in Evaluation)
+  Stop-Limit Orders (e.g., trigger a limit order when a stop price is hit)
+  OCO(One-Cancels-the-Other) (e.g., place a take-profit and stop-loss simultaneously)
+  TWAP(Time-WeightedAverage Price) (e.g., split large orders into smaller chunks over time)
+  GridOrders(e.g., automated buy-low/sell-high within a price range)
+ 3. Validation & Logging
+  Validate inputs (symbol, quantity, price thresholds).
+  Logallactions (order placement, errors, executions) in a structured log file.
+ Submission Guidelines
+ 1. File Structure
+ Submit a single `.zip` file named `[your_name]_binance_bot.zip` with this structure:
+ [project_root]/
+ │
+ ├
+ ── /src/
+ │
+ ├
+ # All source code
+ ── market_orders.py # Example: Market order logic
+ │
+ │
+ ├
+ ├
+ │ │
+ ── limit_orders.py # Example: Limit order logic
+ ── advanced/
+ ├
+ ── oco.py
+ # (Bonus) Folder for advanced orders
+ # Example: OCO order logic
+ │ │ └──twap.py #Example:TWAPstrategy
+ │
+ ├
+ ├
+ ── bot.log
+ ── report.pdf
+ └── README.md
+ # Logs (API calls, errors, executions)
+ # Analysis (screenshots, explanations)
+ # Setup, dependencies, usage
+2. GitHub Submission
+  PushyourcodetoaprivateGitHub repo.
+  Followthesamestructure as the `.zip` file.
+  Addcollaborators: `[your_instructor_github_username]`.
+  RepoNaming:`[your_name]-binance-bot` (e.g., `alice-binance-bot`).
+ Evaluation Criteria
+ Criteria
+ Basic Orders
+ Advanced Orders
+ Logging & Errors
+ Report & Docs
+ Weight
+ 50%
+ 30%
+ 10%
+ 10%
+ Notes
+ Market/limit orders with
+ validation.
+ Stop-Limit, OCO, TWAP, etc.
+ Higher priority if
+ implemented.
+ Structured `bot.log` with
+ timestamps and error traces.
+ Clear `README.md` and
+ `report.pdf` with
+ screenshots.
+ Note: Submissions with advanced orders and proper logs will rank higher.
+ Resources
+  BinanceFutures API Docs: https://binance-docs.github.io/apidocs/futures/en/
+  Historical Data:
+ https://drive.google.com/file/d/1IAfLZwu6rJzyWKgBToqwSmmVYU6VbjVs/view (Optional
+ for testing)
+  Fear&GreedIndex:https://drive.google.com/file/d/1PgQC0tO8XN-wqkNyghWc_
+mnrYv_nhSf/view (Bonus integration)
+ Final Notes
+ 1. Nohardcodedfilenames: Use descriptive names (e.g., `grid_strategy.py` instead of
+ `task3.py`).
+ 2. Reproducibility: Ensure your `README.md` includes:- API setup instructions.- Howtorunthebot(e.g., `python src/market_orders.py BTCUSDT BUY 0.01`).
+ 3. Deadline: Submit the `.zip` and GitHub repo link by [date].
+ Questions? Reach out to [your contact email].
+Key Changes from Original
+  Nocodesnippets: Only conceptual examples (e.g., "OCO orders").
+  Flexible naming: Emphasized descriptive filenames over hardcoded ones.
+  GitHubintegration: Addedprivate repo instructions.
+  Prioritization clarity: Highlighted advanced orders as a key differentiator

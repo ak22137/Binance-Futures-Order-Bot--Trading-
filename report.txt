@@ -1,0 +1,41 @@
+Binance Futures Order Bot - Trading
+====================================
+
+Project Overview
+----------------
+This project is a trading bot designed for Binance Futures. It automates order placement and management, supporting various order types and strategies to facilitate efficient trading on the Binance Futures platform.
+
+Directory Structure
+-------------------
+- bot.log                : Log file for bot activities and errors
+- instruction.txt        : Instructions or configuration details
+- README.md              : Project documentation and usage guide
+- report.pdf             : Existing report in PDF format
+- src/                   : Source code directory
+    - limit_orders.py    : Handles limit order logic
+    - market_orders.py   : Handles market order logic
+    - advanced/          : Advanced trading strategies
+        - oco.py         : Implements OCO (One Cancels the Other) orders
+        - twap.py        : Implements TWAP (Time Weighted Average Price) strategy
+
+Key Features
+------------
+- Automated trading on Binance Futures
+- Support for limit and market orders
+- Advanced strategies: OCO and TWAP
+- Modular codebase for easy extension
+- Logging for monitoring and debugging
+
+Usage
+-----
+Refer to `README.md` and `instruction.txt` for setup and usage instructions. The bot can be customized for different trading strategies by modifying or extending the modules in `src/`.
+
+Author & Repository
+-------------------
+- Repository: Binance-Futures-Order-Bot--Trading-
+- Owner: ak22137
+- Branch: main
+
+Date Generated
+--------------
+August 9, 2025
